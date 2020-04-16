@@ -1,0 +1,93 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
+
+  padding: 20px;
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: 2fr 3fr;
+  gap: 20px;
+}
+
+body {
+  background-color: orangered;
+}
+
+button {
+  border: none;
+  background: none;
+
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 18px;
+
+  grid-column: span 2;
+  justify-self: center;
+  padding: 10px 20px;
+  border-radius: 4px;
+  border: 1px solid white;
+  color: white;
+
+  transition: all ease 0.15s;
+}
+
+button:hover {
+  color: orangered;
+  background: white;
+}
+
+img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+  border: 1px solid white;
+  border-radius: 6px;
+}
+
+main {
+  font-size: 18px;
+  color: white;
+}
+
+main h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+main h2 {
+  font-size: 24px;
+
+  margin-bottom: 16px;
+}
+
+main ul {
+  margin-bottom: 36px;
+  margin-left: 24px;
+}
+
+main ul li span {
+  font-style: italic;
+  opacity: 0.5;
+}
+
+main > *:last-child {
+  margin-top: 36px;
+}

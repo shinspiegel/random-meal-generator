@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "noImplicitAny": true,
+    "noEmitOnError": true,
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "pretty": true,
+    "lib": ["es2017", "dom"]
+  },
+  "exclude": ["node_modules"],
+  "include": ["./node_modules/@types/**/*.d.ts", "./src/**/*.ts"]
+}
